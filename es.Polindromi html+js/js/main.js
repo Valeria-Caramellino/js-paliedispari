@@ -21,4 +21,5 @@ function parolaPalindroma (parola){
         alert("La parola inserita non è palindroma!👎")
     }
 }
+//utilizzo la funzione
 parolaPalindroma(parolaUtente);
