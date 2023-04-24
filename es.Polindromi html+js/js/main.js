@@ -1,5 +1,5 @@
 //console.log("ciao");
-
+/*
 // Chiedere all’utente di inserire una parola
     //Creare un prompt
 let parolaUtente= prompt("inserisci una parola");
@@ -23,3 +23,33 @@ function parolaPalindroma (parola){
 }
 //utilizzo la funzione
 parolaPalindroma(parolaUtente);
+*/
+//PALIDROMA ALTRO METODO
+
+// Variabili
+let parola;
+parola = prompt("Inserisci una parola")
+let parolaReverse = ""
+
+let risultato = isPalindromo(parola);
+
+// condizione
+
+if (risultato === true) {
+    alert("La parola che hai inserito è un palindromo")
+} else {
+    alert("Mi dispiace, la parola che hai inserito non è un palindromo")
+}
+
+// funzione
+
+function isPalindromo(word) {
+    for (let c = word.length - 1; c >= 0; c--) {
+        parolaReverse += parola[c]
+    }
+    if (parola == parolaReverse) {
+        return true
+    }
+    return false
+}
+
